@@ -1,5 +1,7 @@
 # Ansible Role: NTP
 
+[![Build Status](https://travis-ci.org/cecepm/ansible-role-ntp.svg?branch=master)](https://travis-ci.org/cecepm/ansible-role-ntp)
+
 Set timezone, add time synchronization with ntp server.
 
 ## Requirements
