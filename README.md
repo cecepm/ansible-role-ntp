@@ -22,7 +22,13 @@ None.
 
     - hosts: server
       roles:
-         - cecepm.ntp
+        - cecepm.ntp
+
+Another example, set timezone to 'Asia/Makassar'
+
+    - hosts: server
+      roles:
+        - { role: cecepm.ntp, ntp_timezone: 'Asia/Makassar' }
 
 ## License
 
