@@ -12,7 +12,7 @@ None.
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    ntp_timezone: "Asia/Jakarta"
+    ntp_timezone: Asia/Jakarta
 
 ## Dependencies
 
@@ -22,13 +22,13 @@ None.
 
     - hosts: server
       roles:
-        - cecepm.ntp
+      - cecepm.ntp
 
-Another example, set timezone to 'Asia/Makassar'
+Another example, set timezone to "Asia/Makassar"
 
     - hosts: server
       roles:
-        - { role: cecepm.ntp, ntp_timezone: 'Asia/Makassar' }
+      - { role: cecepm.ntp, ntp_timezone: Asia/Makassar }
 
 ## License
 

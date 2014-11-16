@@ -12,8 +12,8 @@
 - name: Ensure ntp packages is installed
   apt: name={{ item }} state=installed
   with_items:
-    - ntp
-    - ntpdate
+  - ntp
+  - ntpdate
 
 - name: Ensure service ntp is running and enabled
   service: name=ntp state=started enabled=yes
