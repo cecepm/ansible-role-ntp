@@ -1,6 +1,7 @@
 ---
 - name: Ensure tzdata is installed
   apt: name=tzdata state=installed
+  sudo: yes
 
 - name: Set to correct timezone
   file: >
@@ -8,12 +9,15 @@
     dest=/etc/localtime
     state=link
     force=true
+  sudo: yes
 
 - name: Ensure ntp packages is installed
   apt: name={{ item }} state=installed
   with_items:
   - ntp
   - ntpdate
+  sudo: yes
 
 - name: Ensure service ntp is running and enabled
   service: name=ntp state=started enabled=yes
+  sudo: yes
